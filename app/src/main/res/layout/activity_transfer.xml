@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transfer"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back_black_24dp"
+        android:id="@+id/back"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/image"
+        android:src="@drawable/police"
+        android:layout_below="@+id/back"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/names"
+        android:text="Name"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emails"
+        android:text="Email"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:layout_below="@+id/names"/>
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="376dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drop"
+        android:entries="@array/typo"
+        android:padding="15dp"
+        android:layout_below="@+id/emails"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount in Rs :"
+        android:id="@+id/amount"
+        android:layout_marginTop="10dp"
+        android:padding="14dp"
+        android:layout_below="@+id/spin"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="3"
+        android:scrollbars="vertical"
+        android:id="@+id/desc"
+        android:hint="Enter description..."
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_below="@+id/amount"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/done"
+        android:background="@drawable/button2"
+        android:text="Done"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/desc"
+        android:textColor="#FFFF"/>
+
+
+
+</RelativeLayout>

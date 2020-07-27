@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typo">
+        <item>Request</item>
+        <item>Grant</item>
+    </string-array>
+</resources>

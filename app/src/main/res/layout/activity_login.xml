@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+
+    android:padding="30dp"
+   >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:id="@+id/log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="28dp"
+        android:id="@+id/login_email"
+        android:text="a@email.com"
+        android:layout_below="@id/log"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/login_password"
+        android:text="password"
+        android:textSize="28dp"
+        android:padding="10dp"
+        android:layout_below="@+id/login_email"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register ?"
+        android:id="@+id/regiister"
+        android:layout_below="@+id/login_password"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login_button"
+        android:background="@drawable/button_bg"
+        android:textColor="#FFFF"
+        android:textAllCaps="false"
+        android:layout_below="@+id/regiister"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made with Love by Tanmay"
+        android:id="@+id/sample"
+        android:layout_below="@+id/login_button"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
